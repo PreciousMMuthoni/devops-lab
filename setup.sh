@@ -7,8 +7,12 @@ PAGE_TITLE="${1:-My first automated server}"
 echo "Updating package list..."
 sudo apt update
 
-echo "Installing nginx..."
-sudo apt install -y nginx
+if command -v nginx > /dev/null; then
+   echo "nginx is already installed, skipping."
+else
+   echo "Installing nginx..."
+   sudo apt install -y nginx
+fi
 
 echo "Writing web page..."
 sudo tee /var/www/html/index.html > /dev/null <<EOF
