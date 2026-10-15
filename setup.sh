@@ -11,7 +11,7 @@ echo "Writing web page..."
 sudo tee /var/www/html/index.html > /dev/null <<'EOF'
 <!DOCTYPE html>
 <html>
-  <head><title>My first automated server</title></head>
+  <head><title>My first automated server - Branch Edit</title></head>
   <body>
      <h1>Hello from my automated server!</h1>
      <p>This page was created by setup.sh, not by hand. I am very proud!</p>
