@@ -15,6 +15,7 @@ sudo tee /var/www/html/index.html > /dev/null <<'EOF'
   <body>
      <h1>Hello from my automated server!</h1>
      <p>This page was created by setup.sh, not by hand. I am very proud!</p>
+     <p>This edit was done to test for pull</p>
   </body>
 </html>
 EOF
